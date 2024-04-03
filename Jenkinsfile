@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'JDK11'
     }
+    tools {
+        maven 'maven-3.9.6'
+    }
     stages {
         stage('SCM') {
             steps {
