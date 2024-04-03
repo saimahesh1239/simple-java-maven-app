@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('SCM') {
-            step {
+            steps {
                 git 'https://github.com/saimahesh1239/simple-java-maven-app.git'
             }            
         }
